@@ -1,0 +1,13 @@
+---
+baseURL: "http://example.org/"
+languageCode: "en-us"
+title: "HugoTufte Demo Site"
+theme: "hugotufte"
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    parser:
+      attribute:
+        block: true
+...

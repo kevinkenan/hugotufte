@@ -1,0 +1,14 @@
+<figure class="iframe-wrapper">
+  {{- if .Inner }}
+  <label for="{{ .Get "id" }}" class="margin-toggle">⊕</label>
+  <input type="checkbox" id="{{ .Get "id" }}" class="margin-toggle">
+  <span class="marginnote">{{ .Inner | markdownify }}</span>
+  {{- end }}
+  <iframe 
+    width="{{ .Get "width" }}" 
+    height="{{ .Get "height" }}"  
+    src="{{ .Get "src" }}" 
+    alt="{{ .Get "alt" }}"
+    frameborder=0
+    allowfullscreen></iframe>
+</figure>

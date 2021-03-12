@@ -1,0 +1,8 @@
+<figure>
+<img src="{{ .Get "src" }}" alt="{{ .Get "alt" }}">
+{{- if .Inner }}
+<label for="{{ .Get "id" }}" class="margin-toggle">⊕</label>
+<input type="checkbox" id="{{ .Get "id" }}" class="margin-toggle">
+<span class="marginnote">{{ .Inner | markdownify }}</span>
+{{- end }}
+</figure>

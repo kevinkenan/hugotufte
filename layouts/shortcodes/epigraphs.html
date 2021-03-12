@@ -1,0 +1,2 @@
+{{- $begin := eq (default "begin" (.Get 0)) "begin" -}}
+{{if $begin }}<div class="epigraph">{{ else }}</div>{{ end }}

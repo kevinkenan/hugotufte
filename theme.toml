@@ -1,0 +1,12 @@
+name = "HugoTufte"
+license = "MIT"
+licenselink = "https://github.com/yourname/yourtheme/blob/master/LICENSE"
+description = "A bare-bones theme that supports Tufte CSS."
+homepage = "https://github.com/kevinkenan/hugotufte/"
+tags = []
+features = []
+min_version = "0.81.0"
+
+[author]
+  name = "Kevin Kenan"
+  homepage = "https://kevinkenan.com"
