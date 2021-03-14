@@ -10,5 +10,5 @@ To see this example site in action, clone the HugoTufte repo and then:
     cd hugotufte/exampleSite
     hugo server --themesDir ../../ --theme hugotufte
 
-You should be able to access the demo page at:
- [`http://localhost:1313/tufte/`](http://localhost:1313/tufte/)
+Once the Hugo server is running, you should be able to access the demo page at:
+[`http://localhost:1313/tufte/`](http://localhost:1313/tufte/)
