@@ -105,7 +105,7 @@ Margin notes are created just like sidenotes, but with the `marginnote` class fo
 	<label for="mn-demo" class="margin-toggle">&#8853;</label>
 	<input type="checkbox" id="mn-demo" class="margin-toggle">
 	<span class="marginnote">
-		This is a margin note. Notice there isn’t a number preceding the note.
+	    This is a margin note. Notice there isn’t a number preceding the note.
 	</span>
 
 Figures in the margin are created as margin notes, as demonstrated in the next section.
@@ -117,24 +117,24 @@ Tufte emphasizes tight integration of graphics with text. Data, graphs, and figu
 Figures should try to use the `figure` element, which by default are constrained to the main column. Don’t wrap figures in a paragraph tag. Any label or margin note goes in a regular margin note inside the figure. For example, most of the time one should introduce a figure directly into the main flow of discussion, like so:
 
 {{<figure 
-	src="/img/exports-imports.png" 
-	alt="Exports and Imports to and from Denmark & Norway from 1700 to 1780"
-	id="mn-exports-imports">}}
+    src="/img/exports-imports.png" 
+    alt="Exports and Imports to and from Denmark & Norway from 1700 to 1780"
+    id="mn-exports-imports">}}
   From Edward Tufte, *Visual Display of Quantitative Information*, page 92.
 {{</figure>}}
 
 {{<margin_figure 
-	src="/img/rhino.png"
-	alt="Image of a Rhinoceros"
-	id="mn-figure-1">}}
+    src="/img/rhino.png"
+    alt="Image of a Rhinoceros"
+    id="mn-figure-1">}}
   F.J. Cole, “The History of Albrecht Dürer’s Rhinoceros in Zooological Literature,” *Science, Medicine, and History: Essays on the Evolution of Scientific Thought and Medical Practice* (London, 1953), ed. E. Ashworth Underwood, 337-356. From page 71 of Edward Tufte’s *Visual Explanations*.
 {{</margin_figure>}}But tight integration of graphics with text is central to Tufte’s work even when those graphics are ancillary to the main body of a text. In many of those cases, a margin figure may be most appropriate. To place figures in the margin, just wrap an image (or whatever) in a margin note inside a `p` tag, as seen to the right of this paragraph.
 
 If you need a full-width figure, give it the `fullwidth` class. Make sure that’s inside an `article`, and it will take up (almost) the full width of the screen. This approach is demonstrated below using Edward Tufte’s English translation of the Napoleon’s March data visualization. From *Beautiful Evidence*, page 122-124.
 
 {{<figure_full
-	src="/img/napoleons-march.png" 
-	alt="Figurative map of the successive losses of the French Army in the Russian campaign, 1812-1813">}}
+    src="/img/napoleons-march.png" 
+    alt="Figurative map of the successive losses of the French Army in the Russian campaign, 1812-1813">}}
 		
 One obstacle to creating elegant figures on the web is the difficulty of handling different screen sizes, especially on the fly. Embedded `iframe` elements are particularly troublesome. For these instances we provide a helper class, `iframe-wrapper`, the most common use for which is probably YouTube videos, e.g.
 		
@@ -143,10 +143,10 @@ One obstacle to creating elegant figures on the web is the difficulty of handlin
 	</figure>
 
 {{<iframe
-	width="853"
-	height="480" 
-	alt="youtube demo"
-	src="https://www.youtube.com/embed/YslQ2625TR4"/>}}
+    width="853"
+    height="480" 
+    alt="youtube demo"
+    src="https://www.youtube.com/embed/YslQ2625TR4"/>}}
 
 You can use this class on a `div` instead of a `figure`, with slightly different results but the same general effect. Experiment and choose depending on your application.
 
@@ -167,8 +167,8 @@ Extended code examples should live in a `code` element within a `pre` element. T
 
 	;; that same side-effecty loop, formatted
 	(doseq [[[a b] [c d]] (map list
-                               (sorted-map :1 1 :2 2)
-                               (sorted-map :3 3 :4 4))]
+	                           (sorted-map :1 1 :2 2)
+	                           (sorted-map :3 3 :4 4))]
 	  (prn (* b d)))
 
 	;; If this proselytizing has worked, check out:
@@ -181,14 +181,14 @@ Tufte CSS provides support for Edward Tufte and Adam Schwartz’s [ImageQuilts](
 This is an ImageQuilt surveying Chinese calligraphy, placed in a full-width figure to accomodate its girth:
 
 {{<figure_full 
-	src="/img/imagequilt-chinese-calligraphy.png"
-	alt="Image of Chinese Calligraphy">}}
+    src="/img/imagequilt-chinese-calligraphy.png"
+    alt="Image of Chinese Calligraphy">}}
 
 Here is an ImageQuilt of 47 animal sounds over and over, in a figure constrained to the main text region. This quilt has ragged edges, but the image itself is of course still rectangular.
 
 {{<figure 
-	src="/img/imagequilt-animal-sounds.png" 
-	alt="Image of animal sounds"/>}}
+    src="/img/imagequilt-animal-sounds.png" 
+    alt="Image of animal sounds"/>}}
 
 {{<section id="epilogue">}}Epilogue{{</section>}}
 
